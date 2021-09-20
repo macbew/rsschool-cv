@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>CV Mikhalchuk Mikhail</title>
+
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body class="body">
+    <div>
+      <header class="header">
+        <div class="header__body">
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li>
+                <a href="#main" class="header__link">Main</a>
+              </li>
+              <li>
+                <a href="#about" class="header__link">About me</a>
+              </li>
+              <li>
+                <a href="#code" class="header__link">Exemples code</a>
+              </li>
+              <li>
+                <a href="#skills" class="header__link">Skills</a>
+              </li>
+              <li>
+                <a href="#language" class="header__link">Language</a>
+              </li>
+            </ul>
+          </nav>
+        </div>     
+      </header>
+      <main>
+        <div class="container">
+          <div class="asaid">
+            <img class="avatar" src="img/avatar-alex.jpg" alt="avatar" />
+            <section class="left-section">
+              <h3>Contact me at</h3>
+              <ul class="contacts">
+                
+                <li><img src="./img/gmail.png" width="18" alt="Gmail" class="logi">mikhailtest88@gmail.com</li>
+                <li><img src="./img/phone.png" width="18" alt="phone" class="logi">+375298203432</li>
+                
+              </ul>
+            </section>
+            <section class="left-section">
+              <h3>Skills</h3>
+              <ul class="skills">
+                <li><img src="./img/html.png" width="18" alt="html" class="logi">HTML</li>
+                <li><img src="./img/css.png" width="18" alt="css" class="logi">CSS</li>
+                <li><img src="./img/js.png" width="18" alt="js" class="logi">JavaScript</li>
+                <li><img src="./img/GITHUB.png" width="18" alt="git" class="logi">Git</li>
+              </ul>
+            </section>
+          </div>
+          <div class="right" id="main">
+            <h1>Mikhail Mikhalchuk</h1>
+            <h2>Web Developer</h2>
+
+            <article class="right-section" id="about">
+              <h3>About me</h3>
+              <img src="./img/unnamed.jpg" alt="About" class="about" />
+              <p class="text">
+                I am a student of the rsschool from the Republic Belarus. I like
+                creating code and do not afraid of any obstacles on my
+                educational path. I want to be Front-end developer. My aim is to
+                become experienced professional, who is able to solve any issue
+                in a unique and quality manner.
+              </p>
+            </article>
+
+            <section class="right-section" id="skills">
+              <h3>Soft skills</h3>
+              <img src="./img/Soft-Skills.jpg" alt="Skill" class="about" />
+              <ul class="skills-li">
+                <li>
+                  Ability to independently plan my working hours and follow this
+                  plan;
+                </li>
+                <li>Ability to quickly learn new things;</li>
+                <li>Ability to perceive a large amount of information;</li>
+                <li>Purposefulness;</li>
+                <li>Curiosity;</li>
+              </ul>
+            </section>
+            <section class="right-section" id="code">
+              <h3>Code exemples</h3>
+              <img src="./img/code.jpg" alt="About" class="about" />
+              <pre id="theCode"><code class="javascript">                     
+     const shiftT = (hour, min, minShift) => {
+
+          let allMin = hour * 60 + min + minShift;
+          hour = Math.floor(allMin / 60) % 24;
+        min = allMin % 60;
+                      
+        return (
+            `${
+             String(hour).padStart(2, '0')
+           }:${
+             String(min).padStart(2, '0')
+            }`
+          );
+       }
+                </code></pre>
+            </section>
+
+            <section class="right-section" >
+              <h3>Examples of projects</h3>
+              <div class="container__project">
+                  <div class="project">
+                      <a target="_blank" href="https://rolling-scopes-school.github.io/macbew-JSFEPRESCHOOL/vertical-slider/">
+                        <img src="./img/slider.jpg" width="300" alt="Img_Slider" class="progect_img">
+                      </a>
+                      <p> Slider. Closed slider. Technologies used: HTML, CSS, JavaScript</p>
+                  </div>          
+                
+                    <div class="project">
+                        <a target="_blank" href="https://rolling-scopes-school.github.io/macbew-JSFEPRESCHOOL/museum/">
+                          <img src="./img/museum.jpg" width="318" alt="Img_Museum" class="progect_img">
+                        </a>
+                        <p> Landung. landing page of museum. Technologies used: HTML, CSS</p>
+                    </div>
+                       
+                    <div class="project">
+                        <a target="_blank" href="https://rolling-scopes-school.github.io/macbew-JSFEPRESCHOOL/whack-a-mole/">
+                            <img src="./img/game.jpg" width="280" alt="Img_Game" class="progect_img">
+                         </a>
+                         <p> Whack a mole. Game "Whack a mole". Technologies used: HTML, CSS, JavaScript</p>
+                    </div>
+            </div>
+            
+            </section>
+
+            
+
+
+            <section class="right-section" id="language">
+              <h3>Language Englich</h3>
+              <img src="./img/language.jpg" alt="language" class="about" />
+              <p>
+                My english level is A2, but I can easily read documentation and
+                technical literature.
+              </p>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <a href="https://github.com/macbew" >
+          <img src="img/footer__github.svg" alt="no image" class="link__footer"/>
+        </a>
+
+        <time id="date"> 2021</time>
+
+        <a href="https://rs.school/js/" >
+          <img src="img/footer__rsschool.svg" alt="rsschool img" class="link__footer"/>
+        </a>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
