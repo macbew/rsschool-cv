@@ -1,1 +1,1 @@
-https://macbew.github.io/rsschool-cv/
+https://macbew.github.io/rsschool-cv/cv
