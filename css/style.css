@@ -256,9 +256,6 @@ ul {
     background: rgba(192,192,192, 0.3);
 }
 
-/* .git{
-    margin:10px;    
-} */
  .footer{
      display:flex;
      justify-content : space-between;
@@ -273,7 +270,9 @@ ul {
      align-items: center;
      flex-wrap: wrap;
  }
- 
+ .link__footer{
+     max-width: 80px;
+ }
  .logi{
      padding-right: 6px ;
  }
